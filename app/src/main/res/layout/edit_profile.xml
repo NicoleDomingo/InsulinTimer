@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="384dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_upload"
+        app:srcCompat="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView21"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_user" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginTop="8dp"
+        android:text="Mharjorie Sandel"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/b_upload"
+
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="116dp"
+        android:background="@drawable/button"
+        android:text="UPLOAD PHOTO"
+        android:textColor="#8d0000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/b_cancel"
+
+        android:layout_width="130dp"
+        android:layout_height="29dp"
+
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button"
+        android:text="CANCEL"
+        android:textColor="#8d0000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="322dp"
+        android:layout_marginBottom="16dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toTopOf="@+id/b_cancel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt10"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="First Name"
+                android:textColor="@android:color/black" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt11"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="Mharjorie"
+
+                android:padding="10dip"
+
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt12"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="Last Name"
+                android:textColor="@android:color/black" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt13"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="Sandel"
+
+                android:padding="10dip"
+
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="Height (cm)"
+                android:textColor="@android:color/black" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt6"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="145"
+
+                android:padding="10dip"
+
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt7"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="Weight (lbs)"
+                android:textColor="@android:color/background_dark" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt8"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="136"
+                android:padding="10dip"
+                android:textColor="@color/colorAccent"
+
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="Min Blood Sugar Level (mg/dL)"
+                android:textColor="@android:color/background_dark" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt4"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="20"
+
+                android:padding="10dip"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <!-- Column 1 -->
+            <TextView
+                android:id="@+id/tbl_txt1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dip"
+
+                android:text="Max Blood Sugar Level (mg/dL)"
+                android:textColor="@android:color/background_dark" />
+
+            <!-- Column 2 -->
+            <EditText
+                android:id="@+id/tbl_txt2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:hint="100"
+                android:padding="10dip"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="#8d0000" />
+
+            <!-- Column 3 -->
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
